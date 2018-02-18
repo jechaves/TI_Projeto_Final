@@ -3,81 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dummy Page</title>
-    <!-- CSS -->
+    <title>Pagina base</title>
+<!-- CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.css">
-    <!--// CSS -->
-    <!-- JavaScripts -->
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <!-- JavaScripts -->
+    <link rel="stylesheet" href="../css/myStyle.css">
+<!--// CSS -->
+<!-- JavaScripts -->
+
+<!-- JavaScripts -->
 
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="/Projeto_Final/index.html">Página Inicial</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacaoMinimizada">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="barraNavegacaoMinimizada">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
+        </a>
+        <!--// Logo -->
+
+        <!-- Links -->
         <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HTML</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html">Pagina template</a>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html" target="_self">Nova pagina na mesma janela</a>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">HTML 3</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">JavaScript</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/Projeto_Final/materia/loops.html">Loops</a>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/arrays.html">Arrays</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/testes.html">Testes</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Objetos</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Objetos - Caractristicas</a>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/objetos.html">Objetos</a>
-                </div>
-            </li>
+
+            <!-- Links direto-->
             <li class="nav-item">
-                <a class="nav-link" href="/Projeto_Final/game.html">Jogo</a>
+                <a class="nav-link" href="../game.html">Jogo</a>
             </li>
+            <!--// Links direto-->
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropHTML" data-toggle="dropdown">
+                    HTML
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="dummyPage.html">Pagina template</a>
+                    <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
+                    <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">link</a>
+                </div>
+            </li>
+            <!--// Dropdown -->
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropJS" data-toggle="dropdown">
+                    JavaScript
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="loops.html">Loops</a>
+                    <a class="dropdown-item" href="arrays.html">Arrays</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Dropdown -->
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropObj" data-toggle="dropdown">
+                    Objetos
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Caractristicas</a>
+                    <a class="dropdown-item" href="objetos.html">Objetos</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Dropdown -->
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropOtr" data-toggle="dropdown">
+                    Outros
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Dropdown -->
+
         </ul>
-        <!--</div>-->
-</nav>
-<br>
-<br>
-<br>
-<br>
+        <!--// Links -->
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
 <!--// Navbar -->
 
-
-    <!--<div class="container bg-success text-left mt-3 mb-5">-->
+<!-- Bootstrap container-->
     <div class="container">
         <h2 style="text-align: center">
-            Dummy Page
+            Pagina base
         </h2>
         <div class="card ">
-            <div class="card-header bg-success">Header</div>
-            <div class="card-body">
-                Content
+            <div class="card-header bg-success text-center">
+                Cabeçalho
             </div>
-            <div class="card-footer">
-                Footer
+            <div class="card-body">
+                Corpo
+            </div>
+            <div class="card-footer text-center">
+                Rodape
             </div>
         </div>
     </div>
+<!--// Bootstrap container-->
+
+<!-- JavaScripts -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
+<!-- JavaScripts -->
 </body>
 </html>
