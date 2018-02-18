@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>Página com formulário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/maquinaSelos.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/maquinaSelos.js" type="text/javascript"></script>
+    </head>
+    <body class="bodyform01">
+        <div>
+            <h1>Página com formulário</h1>
+        </div>
+        <form id="formulario01" action="formpage.html" method="get">
+            <h1>Máquina de selos</h1>
+            <img src="../img/selos_2.png" alt="Imagem de selos" style="width: 30%;" />
+            <fieldset>
+                <legend>
+                    Valores:
+                </legend>
+                <br>
+                <br>
+                <span class="inputquantia" >Quantia para trocar:</span>
+                <input class="inputvalor" type="text" name="quantia" placeholder="Escreva a quantia"/>
+                <br>
+                <br>
+                <br>
+                <span class="outputselos">Selos de 5: </span><span id="selos5">0</span>
+                <span class="outputselos">Selos de 3: </span><span id="selos3">0</span>
+                <br>
+                <br>
+                <br>
+                <input class="botao" type="button" value="Comprar" onclick="calcular();"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

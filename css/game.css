@@ -1,0 +1,32 @@
+#divTitulo
+{
+    text-align: center;
+}
+
+#divContadores
+{
+    text-align: center;
+}
+#divJogo
+{
+    text-align: center;
+}
+
+#pontosQuadro
+{
+    margin: auto;
+    text-align: center;
+    display: block;
+    font-size: large;
+}
+
+.pontosTitulo
+{
+    padding-right: 30px;
+}
+
+#canvasJogo
+{
+    border: 1px solid black;
+    background-color: grey;
+}

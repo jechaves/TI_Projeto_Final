@@ -1,0 +1,10 @@
+body
+{
+    background: url("/Projeto_Final/img/puzzle1.gif") repeat;
+}
+
+#myImagem
+{
+    margin: auto;
+    text-align: center;
+}

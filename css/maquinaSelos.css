@@ -1,0 +1,125 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 4, 2017, 8:25:56 PM
+    Author     : jose.chaves
+*/
+
+.h1{
+    color: green;
+    font-size: 2em;
+}
+
+.menu01{
+    text-align: center;
+    border-bottom: 4px green solid;
+    border-top:  4px green solid;
+}
+
+.menu01 li{
+    list-style: none;
+    display: inline;
+    margin-left: 30px;
+}
+
+.menu01 li a{
+    font-size: 1.5em;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.menu01 li a:hover{
+    color: black;
+    background-color: red;
+}
+
+.body01{
+    background: url("../img/selos_1.jpg") repeat;
+}
+
+.page01{
+    width: 70%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    border: solid;
+    border-radius: 15px;
+    padding: 2em;
+    margin-top: 100px;
+}
+
+.bodyform01{
+    background: url("../img/selos_1.jpg") repeat;
+}
+
+.bodyform01 div{
+    background: white;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    color: blue;
+}
+
+.inputquantia{
+    display: inline;
+}
+.outputselos{
+    padding: 20px;
+}
+
+.botao{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.inputvalor:focus{
+    background-color: lightgreen;
+}
+
+#selos3{
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#selos5{
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#formulario01{
+    width: 75%;
+    margin: auto;
+    background: lightblue;
+    text-align: center;
+    color: blue;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+#formulario01 fieldset{
+    border-style: solid;
+    border-radius: 15px;
+}
+
+#formulario01 legend{
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
