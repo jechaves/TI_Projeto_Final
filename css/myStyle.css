@@ -1,10 +1,17 @@
 body
 {
-    background: url("../img/puzzle1.gif") repeat;
+    background: url("../img/background.gif") repeat fixed;
 }
 
 #myIstec
 {
     margin: auto;
     text-align: center;
+}
+
+#myPic
+{
+    margin: auto;
+    text-align: center;
+    padding: 30px;
 }
