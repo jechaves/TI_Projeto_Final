@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Projeto TI 1 Semestre</title>
+    <meta charset="UTF-8">
+    <title>Pagina base</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/bootstrap-grid.css">
-        <link rel="stylesheet" href="css/bootstrap-reboot.css">
-        <link rel="stylesheet" href="css/myStyle.css">
-        <!--// CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <!--// CSS -->
+    <!-- JavaScripts -->
 
-        <!-- JavaScripts -->
+    <!-- JavaScripts -->
 
-        <!--// JavaScripts -->
-
-    </head>
-    <body>
+</head>
+    <body onload="startGame()">
     <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
 
             <!-- Logotipo -->
-            <a class="navbar-brand" href="#">
-                <img src="img/JChaves.png" alt="JChaves" style="width:40px;">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
             </a>
             <!--// Logotipo -->
 
@@ -34,7 +32,7 @@
 
                 <!-- Link direto-->
                 <li class="nav-item">
-                    <a class="nav-link" href="game.html">Jogo</a>
+                    <a class="nav-link" href="../game.html">Jogo</a>
                 </li>
                 <!--// Link direto-->
 
@@ -44,12 +42,11 @@
                         HTML
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="materia/dummyPage.html">Pagina base</a>
-                        <a class="dropdown-item" href="materia/dummyPage.html" target="_self">Nova pagina na mesma janela</a>
-                        <a class="dropdown-item" href="materia/dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
+                        <a class="dropdown-item" href="dummyPage.html">Pagina base</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="materia/buttons.html">Botões</a>
-                        <a class="dropdown-item" href="materia/textBoxes.html">Caixas de texto</a>
+                        <a class="dropdown-item" href="css_styles.html">CSS</a>
                     </div>
                 </li>
                 <!--// Menu Dropdown -->
@@ -60,7 +57,7 @@
                         CSS
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="materia/css_styles.html">Estilos</a>
+                        <a class="dropdown-item" href="#">Link 1</a>
                         <a class="dropdown-item" href="#">Link 2</a>
                         <a class="dropdown-item" href="#">Link 3</a>
                     </div>
@@ -73,8 +70,8 @@
                         JavaScript
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="materia/loops.html">Loops</a>
-                        <a class="dropdown-item" href="materia/arrays.html">Arrays</a>
+                        <a class="dropdown-item" href="loops.html">Loops</a>
+                        <a class="dropdown-item" href="arrays.html">Arrays</a>
                         <a class="dropdown-item" href="#">Link 3</a>
                     </div>
                 </li>
@@ -87,7 +84,7 @@
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Caractristicas</a>
-                        <a class="dropdown-item" href="materia/objetos.html">Objetos</a>
+                        <a class="dropdown-item" href="objetos.html">Objetos</a>
                         <a class="dropdown-item" href="#">Link 3</a>
                     </div>
                 </li>
@@ -99,8 +96,8 @@
                         Canvas
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="materia/canvasLines.html">Linhas</a>
-                        <a class="dropdown-item" href="materia/canvasBall.html">Bola a saltar</a>
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
                         <a class="dropdown-item" href="#">Link 3</a>
                     </div>
                 </li>
@@ -112,7 +109,7 @@
                         Bootstrap
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="materia/bootstrapExamples.html">Gralha de exemplos</a>
+                        <a class="dropdown-item" href="bootstrapExamples.html">Gralha de exemplos</a>
                         <a class="dropdown-item" href="#">Link 2</a>
                         <a class="dropdown-item" href="#">Link 3</a>
                     </div>
@@ -125,13 +122,14 @@
                         Trabalhos
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="materia/maquinaSelos.html">Maquina de selos</a>
-                        <a class="dropdown-item" href="materia/primeiroProjeto.html">Primeiro projeto</a>
-                        <a class="dropdown-item" href="materia/imc.html">IMC</a>
-                        <a class="dropdown-item" href="materia/canvasBalls.html">Muitas bolas</a>
+                        <a class="dropdown-item" href="maquinaSelos.html">Maquina de selos</a>
+                        <a class="dropdown-item" href="primeiroProjeto.html">Primeiro projeto</a>
+                        <a class="dropdown-item" href="imc.html">IMC</a>
                     </div>
                 </li>
                 <!--// Menu Dropdown -->
+
+
 
                 <!-- Menu Dropdown -->
                 <li class="nav-item dropdown">
@@ -155,16 +153,32 @@
         <br>
     <!--// Navbar -->
 
-        <div id="myIstec">
-            <a href="http://www.istec.pt" target="_blank"><img src="img/istec_logo.png" height="133" width="380"/></a>
+    <!-- Bootstrap container-->
+        <div class="container">
+            <h2 style="text-align: center">
+                Pagina base
+            </h2>
+            <div class="card ">
+                <div class="card-header bg-success text-center">
+                    Cabeçalho
+                </div>
+                <div class="card-body">
+                    <canvas id="canvasJogoV2">
+                        <!-- Jogo -->
+                    </canvas>
+                </div>
+                <div class="card-footer text-center">
+                    Rodape
+                </div>
+            </div>
         </div>
-        <div id="myPic">
-            <a href="http://www.josechaves.net/" target="_blank"><img src="img/Jose_Chaves_451x500.jpg" height="500" width="451"/></a>
-        </div>
+    <!--// Bootstrap container-->
+
     <!-- JavaScripts -->
-        <script src="js/jquery.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.js"></script>
-    <!--// JavaScripts -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/gameV2.js"></script>
+    <!-- JavaScripts -->
     </body>
 </html>

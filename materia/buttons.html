@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+<!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../css/myStyle.css">
+<!--// CSS -->
+<!-- JavaScripts -->
+
+<!-- JavaScripts -->
+
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+
+        <!-- Logotipo -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
+        </a>
+        <!--// Logotipo -->
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+
+            <!-- Link direto-->
+            <li class="nav-item">
+                <a class="nav-link" href="../game.html">Jogo</a>
+            </li>
+            <!--// Link direto-->
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropHTML" data-toggle="dropdown">
+                    HTML
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="dummyPage.html">Pagina base</a>
+                    <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
+                    <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="css_styles.html">CSS</a>
+                </div>
+            </li>
+            <!--// Menu Dropdown -->
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropCSS" data-toggle="dropdown">
+                    CSS
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Menu Dropdown -->
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropJS" data-toggle="dropdown">
+                    JavaScript
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="loops.html">Loops</a>
+                    <a class="dropdown-item" href="arrays.html">Arrays</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Menu Dropdown -->
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropObj" data-toggle="dropdown">
+                    Objetos
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Caractristicas</a>
+                    <a class="dropdown-item" href="objetos.html">Objetos</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Menu Dropdown -->
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropCanvas" data-toggle="dropdown">
+                    Canvas
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Menu Dropdown -->
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropBS" data-toggle="dropdown">
+                    Bootstrap
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="bootstrapExamples.html">Gralha de exemplos</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Menu Dropdown -->
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropTrabalhos" data-toggle="dropdown">
+                    Trabalhos
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="maquinaSelos.html">Maquina de selos</a>
+                    <a class="dropdown-item" href="primeiroProjeto.html">Primeiro projeto</a>
+                    <a class="dropdown-item" href="imc.html">IMC</a>
+                </div>
+            </li>
+            <!--// Menu Dropdown -->
+
+
+
+            <!-- Menu Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardropOtr" data-toggle="dropdown">
+                    Outros
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </li>
+            <!--// Menu Dropdown -->
+
+        </ul>
+        <!--// Links -->
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+<!--// Navbar -->
+
+<!-- Bootstrap container-->
+    <div class="container">
+        <h2 style="text-align: center">
+            Botões
+        </h2>
+        <div class="card">
+            <div class="card-header bg-success text-center">
+                Botão que abre URL
+            </div>
+            <div class="card-body">
+                <p>O parametro para abrir uma nova pagina esta no atributo do form</p>
+                <form action="dummyPage.html">
+                    <input type="submit" value="Abrir link">
+                </form>
+            </div>
+            <div class="card-footer text-left">
+                <pre>
+                    &ltform action="dummyPage.html">
+                        &ltinput type="submit" value="Abrir link">
+                    &lt/form>
+                </pre>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header bg-success text-center">
+                Botão que chama um script
+            </div>
+            <div class="card-body">
+                <p>O botao chama um javaScript para realizar uma ação</p>
+                <form>
+                    <input type="button" value="Chama script" onclick="botao();">
+                </form>
+
+                <!-- Codigo de JavaScript -->
+
+                <script type="text/javascript">
+                    function botao()
+                    {
+                        alert("carregou no botao!");
+                    }
+                </script>
+            </div>
+            <div class="card-footer text-left">
+                <pre>
+                &ltform>
+                    &ltinput type="button" value="Chama script" onclick="botao();">
+                &lt/form>
+                &lt!-- Codigo de JavaScript -->
+                &ltscript type="text/javascript">
+                    function botao()
+                    {
+                        alert("carregou no botao!");
+                    }
+                &lt/script>
+                </pre>
+            </div>
+        </div>
+    </div>
+<!--// Bootstrap container-->
+
+<!-- JavaScripts -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
+<!-- JavaScripts -->
+</body>
+</html>
