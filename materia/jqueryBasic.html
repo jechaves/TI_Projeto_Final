@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Simples jquery</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina base</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+
 <!-- CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link rel="stylesheet" href="../css/bootstrap-reboot.css">
     <link rel="stylesheet" href="../css/myStyle.css">
+    <style>
+        .red
+        {
+            color: red;
+            background-color: green;
+        }
+        .green
+        {
+            color: green;
+            background-color: red;
+        }
+    </style>
 <!--// CSS -->
 <!-- JavaScripts -->
 
@@ -154,98 +169,30 @@
 <!-- Bootstrap container-->
     <div class="container">
         <h2 style="text-align: center">
-            Caixas de texto
+            Simples jquery
         </h2>
         <div class="card ">
             <div class="card-header bg-success text-center">
-                <p>Caixa para introducao de texto</p>
+                Manipulação simples com jquery
             </div>
             <div class="card-body">
-                <form>
-                    <br>
-                    <input type="text" name="inputTxt_01" />  <!-- Caixa de texto-->
-                    <br>
-                </form>
+                <ul id="ul1">
+                    <li id="l1">alfa</li>
+                    <li id="l2">bravo</li>
+                    <li id="l3">charlie</li>
+                    <li id="l4">
+                        <ul id="ul2">
+                            <li id="l21">um</li>
+                            <li id="l22">dois</li>
+                            <li id="l23">tres</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="card-footer text-left">
-                <pre>
-                    &ltinput type="text" name="inputTxt_01" />
-                </pre>
-            </div>
-        </div>
-        <br>
-        <div class="card ">
-            <div class="card-header bg-success text-center">
-                <p>Caixa para introdução de números</p>
-            </div>
-            <div class="card-body">
-                <form>
-                    <br>
-                    <input type="number" name="inputTxt_02" />  <!-- Caixa para introducao de numeros-->
-                    <br>
-                </form>
-            </div>
-            <div class="card-footer text-left">
-                <pre>
-                    &ltinput type="number" name="inputTxt_02" />
-                </pre>
-
+            <div class="card-footer text-center">
+                Rodape
             </div>
         </div>
-        <br>
-        <div class="card ">
-            <div class="card-header bg-success text-center">
-                <p>Caixa para introducao de texto com texto inicial de ajuda dentro da caixa</p>
-            </div>
-            <div class="card-body">
-                <form>
-                    <br>
-                    <input type="text" name="inputTxt_03"  placeholder="Caixa de texto"/>  <!-- Caixa para introducao de texto-->
-                    <br>
-                </form>
-            </div>
-            <div class="card-footer text-left">
-                <pre>
-                    &ltinput type="text" name="inputTxt_03"  placeholder="Caixa de texto"/>  <!-- Caixa para introducao de texto-->
-                </pre>
-            </div>
-        </div>
-        <br>
-        <div class="card ">
-            <div class="card-header bg-success text-center">
-                <p>Caixa para introducao de texto com com o javascript a fazer a leitura do texto que esta na caixa</p>
-            </div>
-            <div class="card-body">
-                <form id="frm04">
-                    <input type="text" name="inputTxt_04" placeholder="Escreva algum texto"/>  <!-- Caixa para introducao de texto-->
-                    <input type="button" value="Ler texto da caixa" onclick="botao();"/>
-                </form>
-                <script>
-                    function botao(){
-                        var frm = document.getElementById("frm04");  // atribui a variavel frm ao elemento com o ID frm04, neste caso e todo o formulario
-                        var caixaDeTexto = frm.inputTxt_04.value;  // como o elemento frame ja foi atrubuido a variavel frm agora pode-se ler um elemeto dentro dessa variavel atravez do nome da mesma e ler o seu valor
-                        alert(caixaDeTexto);
-                    }
-                </script>
-            </div>
-            <div class="card-footer text-left">
-                <pre>
-                    &ltform id="frm04">
-                        &ltinput type="text" name="inputTxt_04" placeholder="Escreva algum texto"/>
-                        &ltinput type="button" value="Ler texto da caixa" onclick="botao();"/>
-                    &lt/form>
-                    &ltscript>
-                        function botao()
-                        {
-                            var frm = document.getElementById("frm04");
-                            var caixaDeTexto = frm.inputTxt_04.value;
-                            alert(caixaDeTexto);
-                        }
-                    &lt/script>
-                </pre>
-            </div>
-        </div>
-        <br>
     </div>
 <!--// Bootstrap container-->
 
@@ -253,6 +200,24 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script>
+        $(function()
+        {
+//    alert("JQuery pronto");
+            $('ul#ul1 li:odd').addClass('red');
+            $('ul#ul1 li:odd').bind('mouseover', function()
+            {
+                var ele=$(this);
+//        ele.append('Loucura');
+                ele.css(
+                    {
+                        color:'yellow',
+                        'font-weight':'bold'
+                    });
+                ele.html('xpto')
+            });
+        });
+    </script>
 <!-- JavaScripts -->
 </body>
 </html>

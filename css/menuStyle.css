@@ -1,0 +1,28 @@
+
+.h1{
+    color: green;
+    font-size: 2em;
+}
+
+.menu01{
+    text-align: center;
+    border-bottom: 4px green solid;
+    border-top:  4px green solid;
+}
+
+.menu01 li{
+    list-style: none;
+    display: inline;
+    margin-left: 30px;
+}
+
+.menu01 li a{
+    font-size: 1.5em;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.menu01 li a:hover{
+    color: black;
+    background-color: red;
+}
