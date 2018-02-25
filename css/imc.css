@@ -1,0 +1,76 @@
+body{
+    background: url("../img/background.gif") repeat;
+}
+
+form{
+    width: 80%;
+    min-height: 700px;
+    background: white;
+    padding: 12px;
+    margin: 0px auto;
+    border-radius: 12px;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+legend{
+    background-color: green;
+    color: pink;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+fieldset{
+    width: 65%;
+    margin: auto;
+    padding: 12px;
+    line-height: 2.2em;
+    text-align: left;
+}
+
+span{
+    width: 180px;
+    font-weight: bold;
+    display: block;
+    float: left;
+}
+
+input[type='text']{
+    border: 2px black outset;
+    width: 200px;
+    padding: 2px
+}
+
+#container_1{
+    text-align: justify;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.menu{
+    text-align: center;
+    border-bottom: 4px green solid;
+    border-top:  4px green solid;
+}
+
+.menu li{
+    display: inline;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.menu li a{
+    font-size: 1.5em;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: black;
+    background-color: red;
+    
+}
+
+.artigo li{
+    list-style: none;
+}

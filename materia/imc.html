@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/imc.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/imc.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            //iniciar();
+        </script>
+    </head>
+    <body>
+        <form id="formulario" action="imc.html" method="get"> <!-- get vao no heater da pagina, post vao no body -->
+            <h1>Índice de massa corporal</h1>
+            <img src="../img/imc_1.jpg" alt="Imagem de IMC"/>
+            <fieldset>
+                <legend>Formulário</legend>
+                <span>Nome:</span>
+                <input type="text" name="txtnome" placeholder="Escreve nome"/>
+                <br>
+                <span>Altura</span>
+                <input type="text" name="txtaltura" value="1.70"/>
+                <br>
+                <span>Peso</span>
+                <input type="text" name="txtpeso" value="62"/>
+                <br>
+                <input type="button" value="Calcular" onclick="iniciar();"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

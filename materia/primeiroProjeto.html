@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Primeiro projeto de TI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/primeiroProjeto.css" type="text/css"/>
+        <script type="text/javascript">
+            function buttonfirst(){
+                alert("José Chaves");
+            }
+        </script>
+        <script type="text/javascript">
+            function buttonsecond(nome){
+                alert("Bom dia, " + nome);
+            }
+        </script>
+        <title>Projeto de TI</title>
+    </head>
+    <body>
+        <div class="heather">
+            <h1>Primeiro projeto de TI</h1>
+        </div>
+        <div class="type1">
+            <div class="type2">
+                <p>Este é o meu primeiro trabalho para TI desde que estou no</p>
+            </div>
+            <div class="type2">
+                <img src="../img/istec_logo.png" alt="Smiley face">
+            </div>
+        </div>
+        <div class="button">
+            <h2>Clicar para saber o meu nome.</h2>
+            <form>
+                <input type="button" onclick="buttonfirst();" value="clicar"/>
+            </form>
+            <br>
+        </div>
+        <br>
+        <div class="type3">
+            <br>
+            <p>
+                Escreve o teu nome e depois clica no botão
+            </p>
+            <form>
+                Nome:<br>
+                <input type="text" name="nome" id="nome">
+                <input type="button" onclick="buttonsecond(nome.value);" value="botão"/>
+            </form>
+            <br>
+        </div>
+    </body>
+</html>
