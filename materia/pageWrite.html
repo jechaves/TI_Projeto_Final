@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina base</title>
+    <title>Escrever na pagina</title>
 <!-- CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.css">
@@ -15,7 +15,7 @@
 <!-- JavaScripts -->
 
 </head>
-<body>
+<body onload="funcData()">
 <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
 
@@ -154,94 +154,123 @@
 <!-- Bootstrap container-->
     <div class="container">
         <h2 style="text-align: center">
-            Caixas de texto
+            Escrever na pagina
         </h2>
         <div class="card ">
             <div class="card-header bg-success text-center">
-                <p>Caixa para introducao de texto</p>
+                Data
             </div>
             <div class="card-body">
-                <form>
-                    <br>
-                    <input type="text" name="inputTxt_01" />  <!-- Caixa de texto-->
-                    <br>
-                </form>
+                <p>Quando a pagina é carregada a data é escrita automaticamente</p>
+                <br>
+                <p> Data completa</p>
+                <p id="data_1"> </p>
+                <br>
+                <p> Data com um formato de melhor leitura</p>
+                <p id="data_2"> </p>
             </div>
             <div class="card-footer text-left">
                 <pre>
-                    &ltinput type="text" name="inputTxt_01" />
-                </pre>
-            </div>
-        </div>
-        <br>
-        <div class="card ">
-            <div class="card-header bg-success text-center">
-                <p>Caixa para introdução de números</p>
-            </div>
-            <div class="card-body">
-                <form>
-                    <br>
-                    <input type="number" name="inputTxt_02" />  <!-- Caixa para introducao de numeros-->
-                    <br>
-                </form>
-            </div>
-            <div class="card-footer text-left">
-                <pre>
-                    &ltinput type="number" name="inputTxt_02" />
-                </pre>
-
-            </div>
-        </div>
-        <br>
-        <div class="card ">
-            <div class="card-header bg-success text-center">
-                <p>Caixa para introducao de texto com texto inicial de ajuda dentro da caixa</p>
-            </div>
-            <div class="card-body">
-                <form>
-                    <br>
-                    <input type="text" name="inputTxt_03"  placeholder="Caixa de texto"/>  <!-- Caixa para introducao de texto-->
-                    <br>
-                </form>
-            </div>
-            <div class="card-footer text-left">
-                <pre>
-                    &ltinput type="text" name="inputTxt_03"  placeholder="Caixa de texto"/>  <!-- Caixa para introducao de texto-->
-                </pre>
-            </div>
-        </div>
-        <br>
-        <div class="card ">
-            <div class="card-header bg-success text-center">
-                <p>Caixa para introducao de texto com com o javascript a fazer a leitura do texto que esta na caixa</p>
-            </div>
-            <div class="card-body">
-                <form id="frm04">
-                    <input type="text" name="inputTxt_04" placeholder="Escreva algum texto"/>  <!-- Caixa para introducao de texto-->
-                    <input type="button" value="Ler texto da caixa" onclick="botao();"/>
-                </form>
-                <script>
-                    function botao(){
-                        var frm = document.getElementById("frm04");  // atribui a variavel frm ao elemento com o ID frm04, neste caso e todo o formulario
-                        var caixaDeTexto = frm.inputTxt_04.value;  // como o elemento frame ja foi atrubuido a variavel frm agora pode-se ler um elemeto dentro dessa variavel atravez do nome da mesma e ler o seu valor
-                        alert(caixaDeTexto);
+                    function funcData()
+                    {
+                        var data = new Date();
+                        document.getElementById("data_1").innerHTML = data;
+                        document.getElementById("data_2").innerHTML = data.toDateString();
                     }
-                </script>
+                </pre>
+            </div>
+        </div>
+        <br>
+        <div class="card ">
+            <div class="card-header bg-success text-center">
+                <p>Escrever texto numa caixa de texto</p>
+            </div>
+            <div class="card-body">
+                <button onclick="funcMudaTexto1()">Mudar o texto da caixa</button><input type="text" id="txtcaixa1" placeholder="Texto original">
             </div>
             <div class="card-footer text-left">
                 <pre>
-                    &ltform id="frm04">
-                        &ltinput type="text" name="inputTxt_04" placeholder="Escreva algum texto"/>
-                        &ltinput type="button" value="Ler texto da caixa" onclick="botao();"/>
-                    &lt/form>
-                    &ltscript>
-                        function botao()
+                    &ltbutton onclick="funcMudaTexto()">Mudar o texto da caixa</button>&ltinput type="text" id="txtcaixa1" placeholder="Texto original">
+                </pre>
+            </div>
+        </div>
+        <br>
+        <div class="card ">
+            <div class="card-header bg-success text-center">
+                <p>Muda o texto da pagina</p>
+            </div>
+            <div class="card-body">
+                <br>
+                <p id="texto2">Este é o texto original</p>
+                <br>
+                <button onclick="funcMudaTexto2()">Mudar o texto da caixa</button>
+            </div>
+            <div class="card-footer text-left">
+                <pre>
+                    &ltbutton onclick="funcMudaTexto2()"> Mudar o texto da caixa &lt/button>
+
+                    function funcMudaTexto2()
+                    {
+                        document.getElementById("texto2").innerHTML = "Este e outro texto!";
+                    }
+                </pre>
+            </div>
+        </div>
+        <br>
+        <div class="card ">
+            <div class="card-header bg-success text-center">
+                <p>Contador crescente de 0 ate 10</p>
+            </div>
+            <div class="card-body">
+                <p>Com uma função <i>unmamed</i> ou seja a função é escrita diretamente dentro de outra função</p>
+                <br>
+                <p>Contador: <spam id="numeroDoContador1">0</spam></p>
+                <button onclick="funcContador1()">Crescente</button>
+            </div>
+            <div class="card-footer text-left">
+                <pre>
+                    button onclick="funcContador1()"> Crescente &lt/button>
+
+                    function funcContador1()
+                    {
+                        var numero = 0;
+                        var t = setInterval(function()
                         {
-                            var frm = document.getElementById("frm04");
-                            var caixaDeTexto = frm.inputTxt_04.value;
-                            alert(caixaDeTexto);
-                        }
-                    &lt/script>
+                            document.getElementById("numeroDoContador1").innerHTML = numero;
+                            if (numero === 10) clearInterval(t);  // se o numero for igual a 10 para o contador de tempo
+                            numero++; // aumenta o numero em 1
+                        },1000);
+                    }
+                </pre>
+            </div>
+        </div>
+        <br>
+        <div class="card ">
+            <div class="card-header bg-success text-center">
+                <p>Contador decrescente de 10 ate 0</p>
+            </div>
+            <div class="card-body">
+                <p>Com uma função <i>named</i> ou seja um função que chama outra função</p>
+                <br>
+                <p>Contador: <spam id="numeroDoContador2">0</spam></p>
+                <button onclick="funcContador2()">Decrescente</button>
+            </div>
+            <div class="card-footer text-left">
+                <pre>
+                    var n = 10;
+                    var t;
+                    function funcContador2()
+                    {
+                        t = setInterval(funcDecrescente, 1000);
+                    }
+
+                    function funcDecrescente()
+                    {
+                        document.getElementById("numeroDoContador2").innerHTML = n;
+                        n--;
+                        if (n === 0)
+                            clearInterval(t);
+                    }
                 </pre>
             </div>
         </div>
@@ -253,6 +282,7 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/pageWrite.js"></script>
 <!-- JavaScripts -->
 </body>
 </html>
