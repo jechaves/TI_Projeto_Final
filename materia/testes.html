@@ -1,250 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
-    <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/testes.js"></script>
-    <title>Testes</title>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap-grid.css">
+        <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.bundle.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/testes.js"></script>
+        <title>Testes</title>
 
-</head>
-<body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="/Projeto_Final/index.html">Página Inicial</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacaoMinimizada">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="barraNavegacaoMinimizada">
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HTML</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html">Pagina template</a>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html" target="_self">Nova pagina na mesma janela</a>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">HTML 3</a>
+    </head>
+    <body>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+
+            <!-- Logotipo -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
+            </a>
+            <!--// Logotipo -->
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+
+                <!-- Link direto-->
+                <li class="nav-item">
+                    <a class="nav-link" href="../game.html">Jogo</a>
+                </li>
+                <!--// Link direto-->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropHTML" data-toggle="dropdown">
+                        HTML
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="dummyPage.html">Pagina base</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="buttons.html">Botões</a>
+                        <a class="dropdown-item" href="textBoxes.html">Caixas de texto</a>
+                        <a class="dropdown-item" href="pageWrite.html">Escrever na pagina</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropCSS" data-toggle="dropdown">
+                        CSS
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cssStyles.html">Estilos</a>
+                        <a class="dropdown-item" href="menuStyle.html">Menus com CSS</a>
+                        <a class="dropdown-item" href="cssStyle.html">Pagina com CSS</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropJS" data-toggle="dropdown">
+                        JavaScript
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="loops.html">Loops</a>
+                        <a class="dropdown-item" href="arrays.html">Arrays</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropObj" data-toggle="dropdown">
+                        Objetos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Caractristicas</a>
+                        <a class="dropdown-item" href="objetos.html">Objetos</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropCanvas" data-toggle="dropdown">
+                        Canvas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="canvasLines.html">Linhas</a>
+                        <a class="dropdown-item" href="canvasBall.html">Bola a saltar</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropJqr" data-toggle="dropdown">
+                        JQuery
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="jqueryBasic.html">Basico JQuery</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropBS" data-toggle="dropdown">
+                        Bootstrap
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="bootstrapExamples.html">Gralha de exemplos</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropTrabalhos" data-toggle="dropdown">
+                        Trabalhos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="primeiroProjeto.html">Primeiro projeto</a>
+                        <a class="dropdown-item" href="maquinaSelos.html">Maquina de selos</a>
+                        <a class="dropdown-item" href="imc.html">IMC</a>
+                        <a class="dropdown-item" href="canvasBalls.html">Muitas bolas</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropOtr" data-toggle="dropdown">
+                        Outros
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+            </ul>
+            <!--// Links -->
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+    <!--// Navbar -->
+
+
+        <!--<div class="container bg-success text-left mt-3 mb-5">-->
+        <div class="container">
+            <h2 style="text-align: center">
+                Testes de JavaScript
+            </h2>
+            <div class="card ">
+                <div class="card-header bg-success">
+                    JavaScript - Abrir a consola para getTemperatura
                 </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">JavaScript</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/Projeto_Final/materia/loops.html">Loops</a>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/arrays.html">Arrays</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/testes.html">Testes</a>
+                <div class="card-body">
+                    console.log('###################################');<br>
+                    //Teste<br>
+                    <br>
+                    <h3>//while<br></h3>
+                    console.log('Testes while');<br>
+                    a1 = 1;<br>
+                    console.log('Valor inicial de a = ' + a1);<br>
+                    while (a1++ < 5)<br>
+                    {<br>
+                    console.log('Valor de a1 quando entra no while = ' + a1);<br>
+                    a1++;<br>
+                    console.log('Valor de a1 quando sai do while = ' + a1);<br>
+                    }<br>
+                    console.log('Valor do a1 quando termina o while = ' + a1);<br>
+                    <br>
+                    console.log('-----------------------------------');<br>
+                    <br>
+                    <h3>//do while<br></h3>
+                    console.log('Testes do while');<br>
+                    a2 = 1;<br>
+                    console.log('Valor inicial de a2 = ' + a2);<br>
+                    do<br>
+                    {<br>
+                    console.log('valor de a2, quando entra no do = ' + a2);<br>
+                    a2++;<br>
+                    console.log('valor de a2, quando sai do do = ' + a2);<br>
+                    }<br>
+                    while ( a2++ < 5);<br>
+                    console.log('valor de a2, quando sai do while = ' + a2);<br>
+                    <br>
+                    console.log('-----------------------------------');<br>
+                    <br>
+                    <h3>//for<br></h3>
+                    console.log('Testes for');<br>
+                    for ( a3 = 1; a3 < 5; a3++)<br>
+                    {<br>
+                    console.log('valor de a3, quando entra no for = ' + a3);<br>
+                    a3++;<br>
+                    console.log('valor de a3, quando sai no for = ' + a3);<br>
+                    }<br>
+                    console.log('valor de a3, quando termina o for = ' + a3);<br>
+                    <br>
+                    console.log('###################################');<br>
+                    <br>
+                    <h3>//Arrays<br></h3>
+                    console.log('Testes de arrays');<br>
+                    console.log('###################################');<br>
+                    var arr1 = [1,2,3,4,5,6];  //Cria uma array<br>
+                    console.log('array1 = ' + arr1);<br>
+                    var arr2 = new Array(9,8,7,6,5,4);  //Cria uma array é igual ao metodo anterior<br>
+                    console.log('array2 = ' + arr2);<br>
+                    console.log('-----------------------------------');<br>
+                    console.log('typeOf -> Tipo de variavel array = ' + typeof arr1);<br>
+                    console.log('-----------------------------------');<br>
+                    console.log('[] -> array1 elemento 0 = ' + arr1[0]);  //Mostra o elemento da array, comeca a contar do 0<br>
+                    console.log('-----------------------------------');<br>
+                    console.log('Length -> array1 tamanho = ' + arr1.length);  //Da o tamanho da array, não comeca a contar do 0<br>
+                    console.log('-----------------------------------');<br>
+                    console.log('Sort -> array2 ordenada = ' + arr2.sort());  //Ordena a array<br>
+                    console.log('-----------------------------------');<br>
+                    console.log('Reverse -> array1 invertida = ' + arr1.reverse());  //Inverte a array<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    var pushArray1 = arr1.push(8);  //Adiciona o numero 8 no fim da array<br>
+                    console.log('Push() -> array1 adiciona o numero 8 = ' + arr1);<br>
+                    console.log('Push() -> Devolve o novo conprimento da array1 = ' + pushArray1);<br>
+                    arr1[arr1.length] = 9;  //Adiciona o numero 9 no fim da array, como a contagem do tamanho comeca no 1 o retorno do tamanho e sempre superior ao maior index da mesma<br>
+                    console.log('arr1[arr1.length] -> array1 adiciona o numero 9 = ' + arr1);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    var popArray1 = arr1.pop();  //Elimina o ultimo elemento da array, se fizermos o display mostra o elemento que eliminamos<br>
+                    console.log('Pop -> Elimina o ultimo elemento da array1 = ' + arr1);<br>
+                    console.log('Pop -> Devolve o elemento eliminado  = ' + popArray1);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    var shiftArray1 = arr1.shift();<br>
+                    console.log('Shift -> Elimina o primeiro elemento da array = ' + arr1);<br>
+                    console.log('Shift -> Devolve o elemento eliminado = ' + shiftArray1);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    var unshiftArray1 = arr1.unshift(0);<br>
+                    console.log('Unhift -> Adiciona um novo primeiro elemento aa array = ' + arr1);<br>
+                    console.log('Unhift -> Devolve o novo tamanho da array = ' + unshiftArray1);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    arr1[3] = 4444;<br>
+                    console.log('Array[x] -> Muda o valor do elemeto [3] ou 4 da array = ' + arr1);<br>
+                    console.log('Valor da array1 = ' + arr1);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    arr1.splice(1,2);<br>
+                    console.log('Splice(x, y) -> Elimina os elementos apartir da posicao x (1) e o y(2) é o numero de elementos a eliminar= ' + arr1);<br>
+                    arr1.splice(2, 0, 'a', 'b');<br>
+                    console.log('Splice(x, y, a, b) -> Adiciona os elementos atraz da posicao x (2) e o y(0) é o numero de elementos a eliminar= ' + arr1);<br>
+                    arr1.splice(1, 4, "z");<br>
+                    console.log('Splice(x, y, a, b) -> Adiciona os elementos atraz da posicao x (1) e o y(4) é o numero de elementos a eliminar= ' + arr1);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5];<br>
+                    arr2 = [6,7,8,9,0];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    console.log('Array2 = ' + arr2);<br>
+                    var concatArray1 = arr1.concat(arr2);<br>
+                    console.log('Concat() -> Junta as duas arraya numa nova variavel, não altera as existentes = ' + concatArray1);<br>
+                    concatArray2 = concatArray1.concat(['a', 'b', 'c']);<br>
+                    console.log('Concat() -> Junta numa nova array a array1 e a, b, c, não altera as existentes = ' + concatArray2);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    var sliceArray1 = arr1.slice(2);<br>
+                    console.log('Slice(x) -> Retorna a array a partir da posicao x(2) = ' + sliceArray1);<br>
+                    var sliceArray2 = arr1.slice(2,4);<br>
+                    console.log('Slice(x, y) -> Retorna a array a partir da posicao x(2) e ate mas não incluindo a posição y(4) = ' + sliceArray2);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    joinArray1 = arr1.join('-');  //Se não atribuirmos a funcao join a uma variavel so o display da mesma é afetado<br>
+                    console.log('Join(x) -> Separa os elementos da array com o carater x = ' + joinArray1);<br>
+                    console.log('Join -> Tipo de variavel returnado = ' + typeof joinArray1);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    stringArray1 = arr1.toString();  //Se não atribuirmos a funcao toString a uma variavel so o display da mesma é afetado<br>
+                    console.log('toString() -> Transforma a array1 numa string = ' + stringArray1);<br>
+                    console.log('toString() -> Tipo de variavel returnado = ' + typeof stringArray1);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    function myFilter(arr)<br>
+                    {<br>
+                    return arr >= 4;<br>
+                    }<br>
+                    var filterArray1 = arr1.filter(myFilter);<br>
+                    console.log('Filter(func) -> Chama a função func que vai retornar (>= 4) e criar uma nova array com os elementos que passarem = ' + filterArray1);<br>
+                    var filterArray2 = arr1.filter(a => a >= 2);  // usa a funcao abreviada<br>
+                    console.log('Filter -> Tambem se pode fazer logo o filtro/funcao (a=>a>=2) dentro do filtro = ' + filterArray2);<br>
+                    console.log('-----------------------------------');<br>
+                    arr1 = [1,2,3,4,5,6];<br>
+                    var forEachArray1 = [];<br>
+                    console.log('Array1 = ' + arr1);<br>
+                    function myForForEach(v, i, a)<br>
+                    {<br>
+                    if ( v >= 3)<br>
+                    {<br>
+                    console.log('ForEach -> Valores que passaram na confirmação (>=3): Index: ' + i + ' Valor: ' + v + ' Array: ' + a);<br>
+                    forEachArray1.push(v);<br>
+                    }<br>
+                    <br>
+                    }<br>
+                    console.log('ForEach -> Para cada elemento da array cahama a funcao e passa os parametros: Valor, Index e Array')<br>
+                    arr1.forEach(myForForEach);<br>
+                    console.log('ForEach -> Array = ' + forEachArray1);<br>
+                    console.log('-----------------------------------');<br>
+                    <br>
+                    <h3>//percorre a array<br></h3>
+                    console.log('Percore os elementos da array');<br>
+                    for ( i = 0; i < arr1.length; i++)<br>
+                    {<br>
+                    console.log('O elemento ' + i + ' da array1 é = ' + arr1[i]);<br>
+                    }<br>
+                    console.log('-----------------------------------');<br>
+                    <br>
+
                 </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown">Objetos</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Objetos - Caractristicas</a>
-                    <a class="dropdown-item" href="/Projeto_Final/materia/objetos.html">Objetos</a>
+                <div class="card-footer">
+                    Footer
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Projeto_Final/game.html">Jogo</a>
-            </li>
-        </ul>
-        <!--</div>-->
-</nav>
-<br>
-<br>
-<br>
-<br>
-<!--// Navbar -->
-
-
-    <!--<div class="container bg-success text-left mt-3 mb-5">-->
-    <div class="container">
-        <h2 style="text-align: center">
-            Testes de JavaScript
-        </h2>
-        <div class="card ">
-            <div class="card-header bg-success">
-                JavaScript - Abrir a consola para getTemperatura
-            </div>
-            <div class="card-body">
-                console.log('###################################');<br>
-                //Teste<br>
-                <br>
-                <h3>//while<br></h3>
-                console.log('Testes while');<br>
-                a1 = 1;<br>
-                console.log('Valor inicial de a = ' + a1);<br>
-                while (a1++ < 5)<br>
-                {<br>
-                console.log('Valor de a1 quando entra no while = ' + a1);<br>
-                a1++;<br>
-                console.log('Valor de a1 quando sai do while = ' + a1);<br>
-                }<br>
-                console.log('Valor do a1 quando termina o while = ' + a1);<br>
-                <br>
-                console.log('-----------------------------------');<br>
-                <br>
-                <h3>//do while<br></h3>
-                console.log('Testes do while');<br>
-                a2 = 1;<br>
-                console.log('Valor inicial de a2 = ' + a2);<br>
-                do<br>
-                {<br>
-                console.log('valor de a2, quando entra no do = ' + a2);<br>
-                a2++;<br>
-                console.log('valor de a2, quando sai do do = ' + a2);<br>
-                }<br>
-                while ( a2++ < 5);<br>
-                console.log('valor de a2, quando sai do while = ' + a2);<br>
-                <br>
-                console.log('-----------------------------------');<br>
-                <br>
-                <h3>//for<br></h3>
-                console.log('Testes for');<br>
-                for ( a3 = 1; a3 < 5; a3++)<br>
-                {<br>
-                console.log('valor de a3, quando entra no for = ' + a3);<br>
-                a3++;<br>
-                console.log('valor de a3, quando sai no for = ' + a3);<br>
-                }<br>
-                console.log('valor de a3, quando termina o for = ' + a3);<br>
-                <br>
-                console.log('###################################');<br>
-                <br>
-                <h3>//Arrays<br></h3>
-                console.log('Testes de arrays');<br>
-                console.log('###################################');<br>
-                var arr1 = [1,2,3,4,5,6];  //Cria uma array<br>
-                console.log('array1 = ' + arr1);<br>
-                var arr2 = new Array(9,8,7,6,5,4);  //Cria uma array é igual ao metodo anterior<br>
-                console.log('array2 = ' + arr2);<br>
-                console.log('-----------------------------------');<br>
-                console.log('typeOf -> Tipo de variavel array = ' + typeof arr1);<br>
-                console.log('-----------------------------------');<br>
-                console.log('[] -> array1 elemento 0 = ' + arr1[0]);  //Mostra o elemento da array, comeca a contar do 0<br>
-                console.log('-----------------------------------');<br>
-                console.log('Length -> array1 tamanho = ' + arr1.length);  //Da o tamanho da array, não comeca a contar do 0<br>
-                console.log('-----------------------------------');<br>
-                console.log('Sort -> array2 ordenada = ' + arr2.sort());  //Ordena a array<br>
-                console.log('-----------------------------------');<br>
-                console.log('Reverse -> array1 invertida = ' + arr1.reverse());  //Inverte a array<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                var pushArray1 = arr1.push(8);  //Adiciona o numero 8 no fim da array<br>
-                console.log('Push() -> array1 adiciona o numero 8 = ' + arr1);<br>
-                console.log('Push() -> Devolve o novo conprimento da array1 = ' + pushArray1);<br>
-                arr1[arr1.length] = 9;  //Adiciona o numero 9 no fim da array, como a contagem do tamanho comeca no 1 o retorno do tamanho e sempre superior ao maior index da mesma<br>
-                console.log('arr1[arr1.length] -> array1 adiciona o numero 9 = ' + arr1);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                var popArray1 = arr1.pop();  //Elimina o ultimo elemento da array, se fizermos o display mostra o elemento que eliminamos<br>
-                console.log('Pop -> Elimina o ultimo elemento da array1 = ' + arr1);<br>
-                console.log('Pop -> Devolve o elemento eliminado  = ' + popArray1);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                var shiftArray1 = arr1.shift();<br>
-                console.log('Shift -> Elimina o primeiro elemento da array = ' + arr1);<br>
-                console.log('Shift -> Devolve o elemento eliminado = ' + shiftArray1);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                var unshiftArray1 = arr1.unshift(0);<br>
-                console.log('Unhift -> Adiciona um novo primeiro elemento aa array = ' + arr1);<br>
-                console.log('Unhift -> Devolve o novo tamanho da array = ' + unshiftArray1);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                arr1[3] = 4444;<br>
-                console.log('Array[x] -> Muda o valor do elemeto [3] ou 4 da array = ' + arr1);<br>
-                console.log('Valor da array1 = ' + arr1);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                arr1.splice(1,2);<br>
-                console.log('Splice(x, y) -> Elimina os elementos apartir da posicao x (1) e o y(2) é o numero de elementos a eliminar= ' + arr1);<br>
-                arr1.splice(2, 0, 'a', 'b');<br>
-                console.log('Splice(x, y, a, b) -> Adiciona os elementos atraz da posicao x (2) e o y(0) é o numero de elementos a eliminar= ' + arr1);<br>
-                arr1.splice(1, 4, "z");<br>
-                console.log('Splice(x, y, a, b) -> Adiciona os elementos atraz da posicao x (1) e o y(4) é o numero de elementos a eliminar= ' + arr1);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5];<br>
-                arr2 = [6,7,8,9,0];<br>
-                console.log('Array1 = ' + arr1);<br>
-                console.log('Array2 = ' + arr2);<br>
-                var concatArray1 = arr1.concat(arr2);<br>
-                console.log('Concat() -> Junta as duas arraya numa nova variavel, não altera as existentes = ' + concatArray1);<br>
-                concatArray2 = concatArray1.concat(['a', 'b', 'c']);<br>
-                console.log('Concat() -> Junta numa nova array a array1 e a, b, c, não altera as existentes = ' + concatArray2);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                var sliceArray1 = arr1.slice(2);<br>
-                console.log('Slice(x) -> Retorna a array a partir da posicao x(2) = ' + sliceArray1);<br>
-                var sliceArray2 = arr1.slice(2,4);<br>
-                console.log('Slice(x, y) -> Retorna a array a partir da posicao x(2) e ate mas não incluindo a posição y(4) = ' + sliceArray2);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                joinArray1 = arr1.join('-');  //Se não atribuirmos a funcao join a uma variavel so o display da mesma é afetado<br>
-                console.log('Join(x) -> Separa os elementos da array com o carater x = ' + joinArray1);<br>
-                console.log('Join -> Tipo de variavel returnado = ' + typeof joinArray1);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                stringArray1 = arr1.toString();  //Se não atribuirmos a funcao toString a uma variavel so o display da mesma é afetado<br>
-                console.log('toString() -> Transforma a array1 numa string = ' + stringArray1);<br>
-                console.log('toString() -> Tipo de variavel returnado = ' + typeof stringArray1);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                console.log('Array1 = ' + arr1);<br>
-                function myFilter(arr)<br>
-                {<br>
-                return arr >= 4;<br>
-                }<br>
-                var filterArray1 = arr1.filter(myFilter);<br>
-                console.log('Filter(func) -> Chama a função func que vai retornar (>= 4) e criar uma nova array com os elementos que passarem = ' + filterArray1);<br>
-                var filterArray2 = arr1.filter(a => a >= 2);  // usa a funcao abreviada<br>
-                console.log('Filter -> Tambem se pode fazer logo o filtro/funcao (a=>a>=2) dentro do filtro = ' + filterArray2);<br>
-                console.log('-----------------------------------');<br>
-                arr1 = [1,2,3,4,5,6];<br>
-                var forEachArray1 = [];<br>
-                console.log('Array1 = ' + arr1);<br>
-                function myForForEach(v, i, a)<br>
-                {<br>
-                if ( v >= 3)<br>
-                {<br>
-                console.log('ForEach -> Valores que passaram na confirmação (>=3): Index: ' + i + ' Valor: ' + v + ' Array: ' + a);<br>
-                forEachArray1.push(v);<br>
-                }<br>
-                <br>
-                }<br>
-                console.log('ForEach -> Para cada elemento da array cahama a funcao e passa os parametros: Valor, Index e Array')<br>
-                arr1.forEach(myForForEach);<br>
-                console.log('ForEach -> Array = ' + forEachArray1);<br>
-                console.log('-----------------------------------');<br>
-                <br>
-                <h3>//percorre a array<br></h3>
-                console.log('Percore os elementos da array');<br>
-                for ( i = 0; i < arr1.length; i++)<br>
-                {<br>
-                console.log('O elemento ' + i + ' da array1 é = ' + arr1[i]);<br>
-                }<br>
-                console.log('-----------------------------------');<br>
-                <br>
-
-            </div>
-            <div class="card-footer">
-                Footer
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

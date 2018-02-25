@@ -14,15 +14,13 @@
         <link rel="stylesheet" href="../css/imc.css"  type="text/css"/>
         <!--// CSS -->
 
-        <script src="../js/imc.js" type="text/javascript"></script>
-
     </head>
     <body>
     <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
 
             <!-- Logotipo -->
-            <a class="navbar-brand" href="../index.html">
+            <a class="navbar-brand" href="#">
                 <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
             </a>
             <!--// Logotipo -->
@@ -46,7 +44,9 @@
                         <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
                         <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="cssStyles.html">CSS</a>
+                        <a class="dropdown-item" href="buttons.html">Botões</a>
+                        <a class="dropdown-item" href="textBoxes.html">Caixas de texto</a>
+                        <a class="dropdown-item" href="pageWrite.html">Escrever na pagina</a>
                     </div>
                 </li>
                 <!--// Menu Dropdown -->
@@ -57,9 +57,9 @@
                         CSS
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
+                        <a class="dropdown-item" href="cssStyles.html">Estilos</a>
+                        <a class="dropdown-item" href="menuStyle.html">Menus com CSS</a>
+                        <a class="dropdown-item" href="cssStyle.html">Pagina com CSS</a>
                     </div>
                 </li>
                 <!--// Menu Dropdown -->
@@ -96,7 +96,20 @@
                         Canvas
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="canvasLines.html">Linhas</a>
+                        <a class="dropdown-item" href="canvasBall.html">Bola a saltar</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropJqr" data-toggle="dropdown">
+                        JQuery
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="jqueryBasic.html">Basico JQuery</a>
                         <a class="dropdown-item" href="#">Link 2</a>
                         <a class="dropdown-item" href="#">Link 3</a>
                     </div>
@@ -122,14 +135,13 @@
                         Trabalhos
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="maquinaSelos.html">Maquina de selos</a>
                         <a class="dropdown-item" href="primeiroProjeto.html">Primeiro projeto</a>
+                        <a class="dropdown-item" href="maquinaSelos.html">Maquina de selos</a>
                         <a class="dropdown-item" href="imc.html">IMC</a>
+                        <a class="dropdown-item" href="canvasBalls.html">Muitas bolas</a>
                     </div>
                 </li>
                 <!--// Menu Dropdown -->
-
-
 
                 <!-- Menu Dropdown -->
                 <li class="nav-item dropdown">
@@ -152,6 +164,7 @@
         <br>
         <br>
     <!--// Navbar -->
+
         <form id="formulario" action="imc.html" method="get"> <!-- get vao no heater da pagina, post vao no body -->
             <h1>Índice de massa corporal</h1>
             <img src="../img/imc_1.jpg" alt="Imagem de IMC"/>
@@ -169,10 +182,12 @@
                 <input type="button" value="Calcular" onclick="iniciar();"/>
             </fieldset>
         </form>
+
         <!-- JavaScripts -->
         <script src="../js/jquery.js"></script>
         <script src="../js/popper.js"></script>
         <script src="../js/bootstrap.js"></script>
+        <script src="../js/imc.js" type="text/javascript"></script>
         <!-- JavaScripts -->
     </body>
 </html>

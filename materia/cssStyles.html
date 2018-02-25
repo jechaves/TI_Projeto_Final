@@ -20,43 +20,146 @@
     <body>
     <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="/Projeto_Final/index.html">Página Inicial</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacaoMinimizada">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="barraNavegacaoMinimizada">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HTML</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html">Pagina template</a>
-                            <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html" target="_self">Nova pagina na mesma janela</a>
-                            <a class="dropdown-item" href="/Projeto_Final/materia/dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">HTML 3</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">JavaScript</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/Projeto_Final/materia/loops.html">Loops</a>
-                            <a class="dropdown-item" href="/Projeto_Final/materia/arrays.html">Arrays</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/Projeto_Final/materia/testes.html">Testes</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Objetos</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Objetos - Caractristicas</a>
-                            <a class="dropdown-item" href="/Projeto_Final/materia/objetos.html">Objetos</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Projeto_Final/game.html">Jogo</a>
-                    </li>
-                </ul>
-                <!--</div>-->
+
+            <!-- Logotipo -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
+            </a>
+            <!--// Logotipo -->
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+
+                <!-- Link direto-->
+                <li class="nav-item">
+                    <a class="nav-link" href="../game.html">Jogo</a>
+                </li>
+                <!--// Link direto-->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropHTML" data-toggle="dropdown">
+                        HTML
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="dummyPage.html">Pagina base</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="buttons.html">Botões</a>
+                        <a class="dropdown-item" href="textBoxes.html">Caixas de texto</a>
+                        <a class="dropdown-item" href="pageWrite.html">Escrever na pagina</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropCSS" data-toggle="dropdown">
+                        CSS
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cssStyles.html">Estilos</a>
+                        <a class="dropdown-item" href="menuStyle.html">Menus com CSS</a>
+                        <a class="dropdown-item" href="cssStyle.html">Pagina com CSS</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropJS" data-toggle="dropdown">
+                        JavaScript
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="loops.html">Loops</a>
+                        <a class="dropdown-item" href="arrays.html">Arrays</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropObj" data-toggle="dropdown">
+                        Objetos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Caractristicas</a>
+                        <a class="dropdown-item" href="objetos.html">Objetos</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropCanvas" data-toggle="dropdown">
+                        Canvas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="canvasLines.html">Linhas</a>
+                        <a class="dropdown-item" href="canvasBall.html">Bola a saltar</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropJqr" data-toggle="dropdown">
+                        JQuery
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="jqueryBasic.html">Basico JQuery</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropBS" data-toggle="dropdown">
+                        Bootstrap
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="bootstrapExamples.html">Gralha de exemplos</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropTrabalhos" data-toggle="dropdown">
+                        Trabalhos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="primeiroProjeto.html">Primeiro projeto</a>
+                        <a class="dropdown-item" href="maquinaSelos.html">Maquina de selos</a>
+                        <a class="dropdown-item" href="imc.html">IMC</a>
+                        <a class="dropdown-item" href="canvasBalls.html">Muitas bolas</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropOtr" data-toggle="dropdown">
+                        Outros
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+            </ul>
+            <!--// Links -->
         </nav>
         <br>
         <br>

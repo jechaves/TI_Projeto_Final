@@ -1,193 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loops</title>
-<!-- CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="../css/myStyle.css">
-<!--// CSS -->
-<!-- JavaScripts -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loops</title>
+    <!-- CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap-grid.css">
+        <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+        <link rel="stylesheet" href="../css/myStyle.css">
+    <!--// CSS -->
+    <!-- JavaScripts -->
 
-<!-- JavaScripts -->
+    <!-- JavaScripts -->
 
-</head>
-<body>
-<!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    </head>
+    <body>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
 
-        <!-- Logo -->
-        <a class="navbar-brand" href="../index.html">
-            <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
-        </a>
-        <!--// Logo -->
+            <!-- Logotipo -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
+            </a>
+            <!--// Logotipo -->
 
-        <!-- Links -->
-        <ul class="navbar-nav">
+            <!-- Links -->
+            <ul class="navbar-nav">
 
-            <!-- Links direto-->
-            <li class="nav-item">
-                <a class="nav-link" href="../game.html">Jogo</a>
-            </li>
-            <!--// Links direto-->
+                <!-- Link direto-->
+                <li class="nav-item">
+                    <a class="nav-link" href="../game.html">Jogo</a>
+                </li>
+                <!--// Link direto-->
 
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardropHTML" data-toggle="dropdown">
-                    HTML
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="dummyPage.html">Pagina template</a>
-                    <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
-                    <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">link</a>
-                </div>
-            </li>
-            <!--// Dropdown -->
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropHTML" data-toggle="dropdown">
+                        HTML
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="dummyPage.html">Pagina base</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="buttons.html">Botões</a>
+                        <a class="dropdown-item" href="textBoxes.html">Caixas de texto</a>
+                        <a class="dropdown-item" href="pageWrite.html">Escrever na pagina</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
 
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardropJS" data-toggle="dropdown">
-                    JavaScript
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="loops.html">Loops</a>
-                    <a class="dropdown-item" href="arrays.html">Arrays</a>
-                    <a class="dropdown-item" href="#">Link 3</a>
-                </div>
-            </li>
-            <!--// Dropdown -->
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropCSS" data-toggle="dropdown">
+                        CSS
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cssStyles.html">Estilos</a>
+                        <a class="dropdown-item" href="menuStyle.html">Menus com CSS</a>
+                        <a class="dropdown-item" href="cssStyle.html">Pagina com CSS</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
 
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardropObj" data-toggle="dropdown">
-                    Objetos
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Caractristicas</a>
-                    <a class="dropdown-item" href="objetos.html">Objetos</a>
-                    <a class="dropdown-item" href="#">Link 3</a>
-                </div>
-            </li>
-            <!--// Dropdown -->
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropJS" data-toggle="dropdown">
+                        JavaScript
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="loops.html">Loops</a>
+                        <a class="dropdown-item" href="arrays.html">Arrays</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
 
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardropOtr" data-toggle="dropdown">
-                    Outros
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 3</a>
-                </div>
-            </li>
-            <!--// Dropdown -->
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropObj" data-toggle="dropdown">
+                        Objetos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Caractristicas</a>
+                        <a class="dropdown-item" href="objetos.html">Objetos</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
 
-        </ul>
-        <!--// Links -->
-    </nav>
-    <br>
-    <br>
-    <br>
-    <br>
-<!--// Navbar -->
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropCanvas" data-toggle="dropdown">
+                        Canvas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="canvasLines.html">Linhas</a>
+                        <a class="dropdown-item" href="canvasBall.html">Bola a saltar</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
 
-<!-- Bootstrap container-->
-    <div class="container">
-        <h2 style="text-align: center">Loops</h2>
-        <div class="card">
-            <div class="card-header bg-success text-center">While</div>
-            <div class="card-body">
-                //while<br>
-                console.log('Testes while');<br>
-                a1 = 1;<br>
-                console.log('Valor inicial de a = ' + a1);<br>
-                while (a1++ < 5)<br>
-                {<br>
-                console.log('Valor de a1 quando entra no while = ' + a1);<br>
-                a1++;<br>
-                console.log('Valor de a1 quando sai do while = ' + a1);<br>
-                }<br>
-                console.log('Valor do a1 quando termina o while = ' + a1);<br>
-            </div>
-            <div class="card-footer" id="rodapeWhile">
-                Testes while<br>
-                Valor inicial de a = 1<br>
-                Valor de a1 quando entra no while = 2<br>
-                Valor de a1 quando sai do while = 3<br>
-                Valor de a1 quando entra no while = 4<br>
-                Valor de a1 quando sai do while = 5<br>
-                Valor do a1 quando termina o while = 6<br>
-            </div>
-        </div>
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropJqr" data-toggle="dropdown">
+                        JQuery
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="jqueryBasic.html">Basico JQuery</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropBS" data-toggle="dropdown">
+                        Bootstrap
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="bootstrapExamples.html">Gralha de exemplos</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropTrabalhos" data-toggle="dropdown">
+                        Trabalhos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="primeiroProjeto.html">Primeiro projeto</a>
+                        <a class="dropdown-item" href="maquinaSelos.html">Maquina de selos</a>
+                        <a class="dropdown-item" href="imc.html">IMC</a>
+                        <a class="dropdown-item" href="canvasBalls.html">Muitas bolas</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropOtr" data-toggle="dropdown">
+                        Outros
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+            </ul>
+            <!--// Links -->
+        </nav>
         <br>
-        <div class="card">
-            <div class="card-header bg-success text-center">Do While</div>
-            <div class="card-body">
-                //do while<br>
-                console.log('Testes do while');<br>
-                a2 = 1;<br>
-                console.log('Valor inicial de a2 = ' + a2);<br>
-                do<br>
-                {<br>
-                console.log('valor de a2, quando entra no do = ' + a2);<br>
-                a2++;<br>
-                console.log('valor de a2, quando sai do do = ' + a2);<br>
-                }<br>
-                while ( a2++ < 5);<br>
-                console.log('valor de a2, quando sai do while = ' + a2);<br>
-            </div>
-            <div class="card-footer">
-                Testes do while<br>
-                Valor inicial de a2 = 1<br>
-                valor de a2, quando entra no do = 1<br>
-                valor de a2, quando sai do do = 2<br>
-                valor de a2, quando entra no do = 3<br>
-                valor de a2, quando sai do do = 4<br>
-                valor de a2, quando entra no do = 5<br>
-                valor de a2, quando sai do do = 6<br>
-                valor de a2, quando sai do while = 7<br>
-            </div>
-        </div>
         <br>
-        <div class="card">
-            <div class="card-header bg-success text-center">For</div>
-            <div class="card-body">
-                //for<br>
-                console.log('Testes for');<br>
-                for ( a3 = 1; a3 < 5; a3++)<br>
-                {<br>
-                console.log('valor de a3, quando entra no for = ' + a3);<br>
-                a3++;<br>
-                console.log('valor de a3, quando sai no for = ' + a3);<br>
-                }<br>
-                console.log('valor de a3, quando termina o for = ' + a3);<br>
+        <br>
+        <br>
+    <!--// Navbar -->
+
+    <!-- Bootstrap container-->
+        <div class="container">
+            <h2 style="text-align: center">Loops</h2>
+            <div class="card">
+                <div class="card-header bg-success text-center">While</div>
+                <div class="card-body">
+                    //while<br>
+                    console.log('Testes while');<br>
+                    a1 = 1;<br>
+                    console.log('Valor inicial de a = ' + a1);<br>
+                    while (a1++ < 5)<br>
+                    {<br>
+                    console.log('Valor de a1 quando entra no while = ' + a1);<br>
+                    a1++;<br>
+                    console.log('Valor de a1 quando sai do while = ' + a1);<br>
+                    }<br>
+                    console.log('Valor do a1 quando termina o while = ' + a1);<br>
+                </div>
+                <div class="card-footer" id="rodapeWhile">
+                    Testes while<br>
+                    Valor inicial de a = 1<br>
+                    Valor de a1 quando entra no while = 2<br>
+                    Valor de a1 quando sai do while = 3<br>
+                    Valor de a1 quando entra no while = 4<br>
+                    Valor de a1 quando sai do while = 5<br>
+                    Valor do a1 quando termina o while = 6<br>
+                </div>
             </div>
-            <div class="card-footer">
-                Testes for<br>
-                valor de a3, quando entra no for = 1<br>
-                valor de a3, quando sai no for = 2<br>
-                valor de a3, quando entra no for = 3<br>
-                valor de a3, quando sai no for = 4<br>
-                valor de a3, quando termina o for = 5<br>
+            <br>
+            <div class="card">
+                <div class="card-header bg-success text-center">Do While</div>
+                <div class="card-body">
+                    //do while<br>
+                    console.log('Testes do while');<br>
+                    a2 = 1;<br>
+                    console.log('Valor inicial de a2 = ' + a2);<br>
+                    do<br>
+                    {<br>
+                    console.log('valor de a2, quando entra no do = ' + a2);<br>
+                    a2++;<br>
+                    console.log('valor de a2, quando sai do do = ' + a2);<br>
+                    }<br>
+                    while ( a2++ < 5);<br>
+                    console.log('valor de a2, quando sai do while = ' + a2);<br>
+                </div>
+                <div class="card-footer">
+                    Testes do while<br>
+                    Valor inicial de a2 = 1<br>
+                    valor de a2, quando entra no do = 1<br>
+                    valor de a2, quando sai do do = 2<br>
+                    valor de a2, quando entra no do = 3<br>
+                    valor de a2, quando sai do do = 4<br>
+                    valor de a2, quando entra no do = 5<br>
+                    valor de a2, quando sai do do = 6<br>
+                    valor de a2, quando sai do while = 7<br>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header bg-success text-center">For</div>
+                <div class="card-body">
+                    //for<br>
+                    console.log('Testes for');<br>
+                    for ( a3 = 1; a3 < 5; a3++)<br>
+                    {<br>
+                    console.log('valor de a3, quando entra no for = ' + a3);<br>
+                    a3++;<br>
+                    console.log('valor de a3, quando sai no for = ' + a3);<br>
+                    }<br>
+                    console.log('valor de a3, quando termina o for = ' + a3);<br>
+                </div>
+                <div class="card-footer">
+                    Testes for<br>
+                    valor de a3, quando entra no for = 1<br>
+                    valor de a3, quando sai no for = 2<br>
+                    valor de a3, quando entra no for = 3<br>
+                    valor de a3, quando sai no for = 4<br>
+                    valor de a3, quando termina o for = 5<br>
+                </div>
             </div>
         </div>
-    </div>
-<!--// Bootstrap container-->
-    <br>
-    <br>
-    <br>
-    <br>
-<!-- JavaScripts -->
-    <script src="../js/jquery.js"></script>
-    <script src="../js/popper.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/loops.js"></script>
-<!-- JavaScripts -->
-</body>
+    <!--// Bootstrap container-->
+        <br>
+        <br>
+        <br>
+        <br>
+    <!-- JavaScripts -->
+        <script src="../js/jquery.js"></script>
+        <script src="../js/popper.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/loops.js"></script>
+    <!-- JavaScripts -->
+    </body>
 </html>
