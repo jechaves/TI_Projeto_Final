@@ -1,23 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Primeiro projeto de TI</title>
         <meta charset="UTF-8">
+        <title>Primeiro projeto de TI</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/favicon.ico" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap-grid.css">
+        <link rel="stylesheet" href="../css/bootstrap-reboot.css">
         <link rel="stylesheet" href="../css/primeiroProjeto.css" type="text/css"/>
-        <script type="text/javascript">
-            function buttonfirst(){
-                alert("José Chaves");
-            }
-        </script>
-        <script type="text/javascript">
-            function buttonsecond(nome){
-                alert("Bom dia, " + nome);
-            }
-        </script>
-        <title>Projeto de TI</title>
+        <!--// CSS -->
     </head>
     <body>
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+
+            <!-- Logotipo -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/JChaves.png" alt="JChaves" style="width:40px;">
+            </a>
+            <!--// Logotipo -->
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+
+                <!-- Link direto-->
+                <li class="nav-item">
+                    <a class="nav-link" href="../game.html">Jogo</a>
+                </li>
+                <!--// Link direto-->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropHTML" data-toggle="dropdown">
+                        HTML
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="dummyPage.html">Pagina base</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_self">Nova pagina na mesma janela</a>
+                        <a class="dropdown-item" href="dummyPage.html" target="_blank">Nova pagina numa nova janela</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="css_styles.html">CSS</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropCSS" data-toggle="dropdown">
+                        CSS
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropJS" data-toggle="dropdown">
+                        JavaScript
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="loops.html">Loops</a>
+                        <a class="dropdown-item" href="arrays.html">Arrays</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropObj" data-toggle="dropdown">
+                        Objetos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Caractristicas</a>
+                        <a class="dropdown-item" href="objetos.html">Objetos</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropCanvas" data-toggle="dropdown">
+                        Canvas
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropBS" data-toggle="dropdown">
+                        Bootstrap
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="bootstrapExamples.html">Gralha de exemplos</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropTrabalhos" data-toggle="dropdown">
+                        Trabalhos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="maquinaSelos.html">Maquina de selos</a>
+                        <a class="dropdown-item" href="primeiroProjeto.html">Primeiro projeto</a>
+                        <a class="dropdown-item" href="imc.html">IMC</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+
+
+                <!-- Menu Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardropOtr" data-toggle="dropdown">
+                        Outros
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+                <!--// Menu Dropdown -->
+
+            </ul>
+            <!--// Links -->
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+    <!--// Navbar -->
         <div class="heather">
             <h1>Primeiro projeto de TI</h1>
         </div>
@@ -49,5 +180,20 @@
             </form>
             <br>
         </div>
+    <!-- JavaScripts -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+        function buttonfirst(){
+            alert("José Chaves");
+        }
+    </script>
+    <script type="text/javascript">
+        function buttonsecond(nome){
+            alert("Bom dia, " + nome);
+        }
+    </script>
+    <!-- JavaScripts -->
     </body>
 </html>
