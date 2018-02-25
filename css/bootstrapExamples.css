@@ -1,0 +1,15 @@
+
+    body {
+        margin-bottom: 80px;
+    }
+
+    row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    div.alert-secondary {
+        border: 1px solid #a6a6a6 !important;
+        min-height: 40px;
+        line-height: 40px;
+    }
