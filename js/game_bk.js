@@ -32,11 +32,6 @@ canvas.height = canvasHeight;  //Tamanho da canvas o tamanho de toda a janelo do
 c = canvas.getContext('2d');  //contexto da canvas, onde se vao criar as coisas
 //console.log(c);
 
-//sounds
-var hitWall = document.getElementById("hitWall");
-var hitPaddle = document.getElementById("hitPaddle");
-var missBall = document.getElementById("missPaddle");
-
 function contador()
 {
     pontosTotal += 1;
@@ -94,12 +89,10 @@ function Circulo()  //Cria um objeto
         if (this.y + this.raio > canvasHeight || this.y - this.raio < 0) //A mesma coisa da condição anterior, mas para os limites superior e inferior
         {
             this.vy = -this.vy;
-            hitWall.play();
         }
         if ( this.x + this.raio > canvasWidth )  //Verifica onde esta o circulo e se bate no lado direito
         {
             this.vx = -this.vx;  //Caso alguma das condicoes anteriores seja verdadeira inverte-se a direçao do circulo bolaVelocidadeX
-            hitWall.play();
         }
 
         if ( this.x - this.raio < barra.x && this.y > barra.py && this.y < barra.py + barra.y )  //Verifica onde esta o circulo e se bate no lado esquerdo ou na barra
@@ -107,14 +100,13 @@ function Circulo()  //Cria um objeto
             this.vx = -this.vx;  //Caso alguma das condicoes anteriores seja verdadeira inverte-se a direçao do circulo bolaVelocidadeX
             this.vx += 0.5;
             this.vy += 0.5;
-            hitPaddle.play();
             contador();
 
         }
 
         if ( this.x < 0 - this.raio)
         {
-
+            //bola = null;
             bola = new Circulo();
             pontosTotal = 0;
             document.getElementById('pontosTotal').innerHTML = pontosTotal;
